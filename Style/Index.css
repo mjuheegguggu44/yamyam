@@ -64,9 +64,7 @@ a {
 
 /* 검색창 ~ 검색버튼까지 박스 */
 .search-box {
-    /* display: inline-block; */
     position: relative;
-    border-radius: 30px;
     border: 1px solid #9BCE26;
     border-radius: 7px;
     font-weight: 500;
@@ -123,10 +121,9 @@ a {
     background: url(../images/main/header/user.png);
     width: 20px;
     height: 20px;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* cursor: pointer; */
 }
 
 /* 장바구니 이미지 박스 */
@@ -134,10 +131,9 @@ a {
     background: url(../images/main/header/basket.png);
     width: 20px;
     height: 20px;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* cursor: pointer; */
 }
 
 /* 장바구니 이미지에 걸쳐있는 숫자 부분 */
