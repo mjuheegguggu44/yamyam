@@ -217,3 +217,7 @@ a {
     margin: -3px 10px 0 0;
 
 }
+
+.main-img > img{
+    max-width: 100%;
+}
