@@ -219,9 +219,30 @@ a {
     max-width: 100%;
 }
 
+/* 메인컨텐츠 */
 .main-wrap{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 110px 0 170px;
+}
+
+.main-wrap > h2{
+    font-size: 40PX;
+    color: #222;
+    letter-spacing: -2px;
+}
+
+.main-wrap .tab{
+    padding:42px 0 90px;
+}
+
+.main-wrap ul{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+
+
 }
 
 .main-wrap li{
@@ -237,6 +258,7 @@ a {
     display: block;
 
 }
+
 .main-wrap .black{
     background-color: #222;
 }
