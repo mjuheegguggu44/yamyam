@@ -214,7 +214,45 @@ a {
 
 }
 
-/* 메인 이미지  */
+/* 메인비쥬얼 이미지  */
 .main-img > img{
     max-width: 100%;
+}
+
+.main-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-wrap li{
+    width: 110px; height: 110px;
+    /* background-color: green; */
+    border-radius: 20px;
+    /* padding: 20px 26px 22px; */
+    padding: 20px 10px 22px;
+    box-sizing: border-box;
+
+    /* display: flex;
+    flex-direction: row; */
+    display: block;
+
+}
+.main-wrap .black{
+    background-color: #222;
+}
+
+.main-wrap .black > a{
+    color: #9BCE26;
+    font-weight: 800;
+}
+
+.main-wrap .gray{
+    background-color: #F2F2F2;
+}
+
+.main-wrap a{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
