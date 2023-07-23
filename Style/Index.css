@@ -170,7 +170,20 @@ a {
     margin: 0 auto;
 }
 
-.menu-wrap a{
+#oneH {
+    display: flex;
+    color: red;
+    gap: 5px;
+}
+
+#oneH>img {
+    width: 11px;
+    height: 19px;
+    padding-top: 2px;
+
+}
+
+.menu-wrap a {
     font-weight: 600;
     color: #777;
     font-size: 18px;
@@ -197,6 +210,7 @@ a {
     line-height: 1.5;
 }
 
+
 /* 카테고리 오른쪽 부분 | */
 .category::after {
     display: block;
@@ -217,73 +231,74 @@ a {
     content: "";
     vertical-align: middle;
     background: url(https://www.rankingdak.com/resources/pc/images/icon/ico_gnb_all.png)0 0;
-    margin: -3px 10px 2px 0;
+    margin: -3px 10px 2px 5px;
 
 }
 
 /* 메인비쥬얼 이미지  */
-.main-img img{
+.main-img img {
     max-width: 100%;
     position: relative;
 }
 
-.main-img>.v-text{
+.main-img>.v-text {
     position: absolute;
     /* top:433px;  */
-    top:410px; 
-    left:340px;
-    z-index :1;
-    display:flex;
+    top: 410px;
+    left: 340px;
+    z-index: 1;
+    display: flex;
     flex-direction: column;
 
 }
 
-.main-img .text1{
-    font-size:22px;
-    color:#615540;
+.main-img .text1 {
+    font-size: 22px;
+    color: #615540;
     letter-spacing: -2px;
     margin-bottom: 5px;
 }
 
-.main-img .text1>span{
+.main-img .text1>span {
     font-weight: bold;
 }
 
-.main-img .text2{
-    font-size:62px;
-    color:#615540;
+.main-img .text2 {
+    font-size: 62px;
+    color: #615540;
     letter-spacing: -6px;
 }
 
-.main-img .text2>.text-color1{
-    color:#222;
+.main-img .text2>.text-color1 {
+    color: #222;
     font-weight: 800;
 }
 
-.main-img .text2>.text-color2{
-    color:#83AE21;
+.main-img .text2>.text-color2 {
+    color: #83AE21;
     font-weight: 800;
 }
 
-.main-img .v-btn{
-    display:flex;
+.main-img .v-btn {
+    display: flex;
     flex-direction: row;
-    gap:12px;
+    gap: 12px;
     padding-top: 64px;
-} 
+}
 
-.main-img p{
-    width:15px; height: 15px;
+.main-img p {
+    width: 15px;
+    height: 15px;
     border: 2px solid #fff;
     border-radius: 50px;
 }
 
-.main-img p:nth-child(1){
+.main-img p:nth-child(1) {
     background-color: #fff;
 }
 
 /* 메인컨텐츠_베스트메뉴 */
-#main-wrap{
+#main-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -293,49 +308,50 @@ a {
     margin: 0 auto;
 }
 
-#main-wrap>h2{
+#main-wrap>h2 {
     font-size: 40PX;
     color: #222;
     letter-spacing: -2px;
 }
 
 /* 베스트메뉴 탭 */
-.tab1{
-    padding:42px 0 90px;
+.tab1 {
+    padding: 42px 0 90px;
 }
 
-.tab1>ul{
+.tab1>ul {
     display: flex;
     flex-direction: row;
-    gap:20px;
+    gap: 20px;
 }
 
-.tab1 li{
-    width: 110px; height: 110px;
+.tab1 li {
+    width: 110px;
+    height: 110px;
     border-radius: 20px;
     padding: 20px 10px 22px;
     box-sizing: border-box;
     display: block;
 }
 
-.tab1 li img{
+.tab1 li img {
     margin-bottom: 5px;
 }
 
-.black{
+.black {
     background-color: #222;
 }
 
-.black>a{
+.black>a {
     color: #B2EB31;
     font-weight: bold;
 }
 
-.gray{
+.gray {
     background-color: #F2F2F2;
 }
 
-.tab1 a{
+.tab1 a {
     font-size: 12px;
     display: flex;
     flex-direction: column;
@@ -343,95 +359,97 @@ a {
 }
 
 /* 베스트메뉴 상품 */
-.contents ul{
+.contents ul {
     display: flex;
     flex-direction: row;
-    gap:30px;
+    gap: 30px;
     list-style-type: none;
 }
-.contents ul:nth-child(1){
+
+.contents ul:nth-child(1) {
     margin-bottom: 63px;
 }
 
 /* 상품사진 */
-.food-h{
+.food-h {
     margin-bottom: 25px;
 }
 
 /* 상품정보 */
-.contents .num1{
+.contents .num1 {
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
 }
 
-.contents .text-box{
-    width:226px;
+.contents .text-box {
+    width: 226px;
 }
 
-.contents .text-box a{
+.contents .text-box a {
     font-size: 16px;
     letter-spacing: -1px;
 }
 
-.contents .num1{
+.contents .num1 {
     font-size: 20px;
     color: #444;
     font-weight: bold;
     line-height: 20px;
 }
 
-.contents .num2{
+.contents .num2 {
     margin-bottom: 20px;
 }
 
-.contents .num2>span:nth-child(1){
+.contents .num2>span:nth-child(1) {
     font-size: 20px;
     color: #FF4E42;
     font-weight: bold;
 }
 
-.contents .num2>span:nth-child(2){
+.contents .num2>span:nth-child(2) {
     font-size: 20px;
     color: #444;
     font-weight: bold;
 }
 
-.contents .num2>span:nth-child(3){
+.contents .num2>span:nth-child(3) {
     font-size: 16px;
     color: #888888;
     text-decoration: line-through;
     /* font-weight: bold; */
 }
 
-.num3{
+.num3 {
     display: flex;
     flex-direction: row;
-    gap:4px;
+    gap: 4px;
 }
 
-.num3>p{
-    width:76px; height: 20px;
+.num3>p {
+    width: 76px;
+    height: 20px;
     border-radius: 20px;
     text-align: center;
 }
 
-.num3>p>span{
+.num3>p>span {
     color: #fff;
     font-size: 12px;
     margin: auto 0;
 }
 
-.num3>p.new_blue{
+.num3>p.new_blue {
     background-color: #2695CE;
 }
 
-.num3>p.quick_red{
+.num3>p.quick_red {
     background-color: #FF4E42;
 }
 
 /* 백그라운드 이미지_고정 */
-#background{
+#background {
     background-image: url('../images/main/contents_bg.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -441,46 +459,46 @@ a {
     align-items: center;
 }
 
-#background>div{
+#background>div {
     margin: 0 auto;
     width: 652px;
     display: flex;
     flex-direction: column;
 }
 
-#background p{
+#background p {
     text-align: center;
-    line-height:40px;
+    line-height: 40px;
 }
 
-#background p:nth-child(2){
+#background p:nth-child(2) {
     height: 42px;
     background-color: #83B01B;
     margin-top: 5px;
 }
 
-#background p:nth-child(2)>a{
+#background p:nth-child(2)>a {
     font-weight: bold;
 }
 
-#background a{
+#background a {
     font-size: 24px;
-    color:#fff;
+    color: #fff;
     letter-spacing: -2px;
     font-weight: 100;
 }
 
-#background span{
+#background span {
     font-size: 45px;
     font-weight: bold;
 }
 
 /* 펫푸드.MD추천 */
-#back-color{
+#back-color {
     background-color: #F2F2F2;
 }
 
-#main-wrap{
+#main-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -490,83 +508,83 @@ a {
     margin: 0 auto;
 }
 
-.pet-pood{
-    margin-top:50px;
+.pet-pood {
+    margin-top: 50px;
 }
 
-.pet-pood>span{
-    color:#9BCE26;
+.pet-pood>span {
+    color: #9BCE26;
 }
 
 /* 펫푸드 메뉴 탭 */
-.tab2{
+.tab2 {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    gap:80px;
+    gap: 80px;
     margin-top: 40px;
     margin-bottom: 70px;
 }
 
-.tab2>li{
-    padding-bottom:8px;
+.tab2>li {
+    padding-bottom: 8px;
     letter-spacing: -2px;
     /* box-sizing: border-box; */
 }
 
-.tab2>li:hover{
+.tab2>li:hover {
     border-bottom: 3px solid #9BCE26;
     padding-bottom: 3px;
     box-sizing: border-box;
 }
 
-.tab2 a{
+.tab2 a {
     font-weight: bold;
-    color:#444;
+    color: #444;
 }
 
 /* 이미지상품 정렬 */
-.sub-wrap{
+.sub-wrap {
     display: flex;
     flex-direction: row;
-    gap:40px;
+    gap: 40px;
 }
 
 /* 펫푸드 상품 */
-.pet-img>img{
+.pet-img>img {
     border-radius: 20px;
 }
 
-.food-p{
-    width:620px;
+.food-p {
+    width: 620px;
 }
 
-.food-p>ul{
+.food-p>ul {
     list-style-type: none;
 }
 
-.food-p>ul>li>p>a>img{
+.food-p>ul>li>p>a>img {
     border-radius: 20px;
 }
 
-.food-p .num1{
+.food-p .num1 {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
 }
 
-.food-p .text-box{
-    width:398px;
+.food-p .text-box {
+    width: 398px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
 }
 
-.food-p .text-box li{
-     width:240px;
+.food-p .text-box li {
+    width: 240px;
 }
 
-.food-p .text-box a{
+.food-p .text-box a {
     font-size: 16px;
     letter-spacing: -1px;
     color: #444;
@@ -574,8 +592,8 @@ a {
     line-height: 20px;
 }
 
-.food-p .num1 p{
+.food-p .num1 p {
     font-size: 20px;
-    color:#444;
+    color: #444;
     font-weight: bold;
 }
