@@ -276,15 +276,14 @@ a {
 }
 
 /* 베스트메뉴 상품 */
-.contents>div:nth-child(1){
-    margin-bottom: 90px;
-}
-
 .contents ul{
     display: flex;
     flex-direction: row;
     gap:30px;
     list-style-type: none;
+}
+.contents ul:nth-child(1){
+    margin-bottom: 90px;
 }
 
 /* 상품사진 */
