@@ -170,6 +170,13 @@ a {
     margin: 0 auto;
 }
 
+.menu-wrap a{
+    font-weight: 600;
+    color: #777;
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+
 /* 맛집랭킹 ~ 한집배달 부분 박스 */
 .liner {
     width: 100%;
@@ -184,9 +191,9 @@ a {
     height: 100%;
     display: block;
     width: 190px;
-    color: #333;
+    /* color: #333;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 500; */
     line-height: 1.5;
 }
 
@@ -210,44 +217,100 @@ a {
     content: "";
     vertical-align: middle;
     background: url(https://www.rankingdak.com/resources/pc/images/icon/ico_gnb_all.png)0 0;
-    margin: -3px 10px 0 0;
+    margin: -3px 10px 2px 0;
 
 }
 
 /* 메인비쥬얼 이미지  */
-.main-img > img{
+.main-img img{
     max-width: 100%;
+    position: relative;
+}
+
+.main-img>.v-text{
+    position: absolute;
+    /* top:433px;  */
+    top:410px; 
+    left:340px;
+    z-index :1;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.main-img .text1{
+    font-size:22px;
+    color:#615540;
+    letter-spacing: -2px;
+    margin-bottom: 5px;
+}
+
+.main-img .text1>span{
+    font-weight: bold;
+}
+
+.main-img .text2{
+    font-size:62px;
+    color:#615540;
+    letter-spacing: -6px;
+}
+
+.main-img .text2>.text-color1{
+    color:#222;
+    font-weight: 800;
+}
+
+.main-img .text2>.text-color2{
+    color:#83AE21;
+    font-weight: 800;
+}
+
+.main-img .v-btn{
+    display:flex;
+    flex-direction: row;
+    gap:12px;
+    padding-top: 64px;
+} 
+
+.main-img p{
+    width:15px; height: 15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+}
+
+.main-img p:nth-child(1){
+    background-color: #fff;
 }
 
 /* 메인컨텐츠_베스트메뉴 */
-.main-wrap{
+#main-wrap{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 110px 0 170px;
-    
+    padding: 110px 15px 170px;
+    box-sizing: border-box;
     width: 1300px;
     margin: 0 auto;
 }
 
-.main-wrap>h2{
+#main-wrap>h2{
     font-size: 40PX;
     color: #222;
     letter-spacing: -2px;
 }
 
 /* 베스트메뉴 탭 */
-.main-wrap .tab{
+.tab1{
     padding:42px 0 90px;
 }
 
-.main-wrap .tab>ul{
+.tab1>ul{
     display: flex;
     flex-direction: row;
     gap:20px;
 }
 
-.main-wrap .tab li{
+.tab1 li{
     width: 110px; height: 110px;
     border-radius: 20px;
     padding: 20px 10px 22px;
@@ -255,20 +318,24 @@ a {
     display: block;
 }
 
-.main-wrap .black{
+.tab1 li img{
+    margin-bottom: 5px;
+}
+
+.black{
     background-color: #222;
 }
 
-.main-wrap .black>a{
-    color: #9BCE26;
-    font-weight: 800;
+.black>a{
+    color: #B2EB31;
+    font-weight: bold;
 }
 
-.main-wrap .gray{
+.gray{
     background-color: #F2F2F2;
 }
 
-.main-wrap .tab a{
+.tab1 a{
     font-size: 12px;
     display: flex;
     flex-direction: column;
@@ -283,11 +350,11 @@ a {
     list-style-type: none;
 }
 .contents ul:nth-child(1){
-    margin-bottom: 90px;
+    margin-bottom: 63px;
 }
 
 /* 상품사진 */
-.food{
+.food-h{
     margin-bottom: 25px;
 }
 
@@ -361,4 +428,154 @@ a {
 
 .num3>p.quick_red{
     background-color: #FF4E42;
+}
+
+/* 백그라운드 이미지_고정 */
+#background{
+    background-image: url('../images/main/contents_bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 346px;
+    display: flex;
+    align-items: center;
+}
+
+#background>div{
+    margin: 0 auto;
+    width: 652px;
+    display: flex;
+    flex-direction: column;
+}
+
+#background p{
+    text-align: center;
+    line-height:40px;
+}
+
+#background p:nth-child(2){
+    height: 42px;
+    background-color: #83B01B;
+    margin-top: 5px;
+}
+
+#background p:nth-child(2)>a{
+    font-weight: bold;
+}
+
+#background a{
+    font-size: 24px;
+    color:#fff;
+    letter-spacing: -2px;
+    font-weight: 100;
+}
+
+#background span{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/* 펫푸드.MD추천 */
+#back-color{
+    background-color: #F2F2F2;
+}
+
+#main-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 15px 170px;
+    box-sizing: border-box;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.pet-pood{
+    margin-top:50px;
+}
+
+.pet-pood>span{
+    color:#9BCE26;
+}
+
+/* 펫푸드 메뉴 탭 */
+.tab2{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap:80px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.tab2>li{
+    padding-bottom:8px;
+    letter-spacing: -2px;
+    /* box-sizing: border-box; */
+}
+
+.tab2>li:hover{
+    border-bottom: 3px solid #9BCE26;
+    padding-bottom: 3px;
+    box-sizing: border-box;
+}
+
+.tab2 a{
+    font-weight: bold;
+    color:#444;
+}
+
+/* 이미지상품 정렬 */
+.sub-wrap{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+}
+
+/* 펫푸드 상품 */
+.pet-img>img{
+    border-radius: 20px;
+}
+
+.food-p{
+    width:620px;
+}
+
+.food-p>ul{
+    list-style-type: none;
+}
+
+.food-p>ul>li>p>a>img{
+    border-radius: 20px;
+}
+
+.food-p .num1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.food-p .text-box{
+    width:398px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.food-p .text-box li{
+     width:240px;
+}
+
+.food-p .text-box a{
+    font-size: 16px;
+    letter-spacing: -1px;
+    color: #444;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.food-p .num1 p{
+    font-size: 20px;
+    color:#444;
+    font-weight: bold;
 }
