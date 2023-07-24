@@ -251,10 +251,10 @@ a {
 
 .main-box{
     display: flex;
-    align-items: center;
+    padding-top:70px;
     justify-content: center;
     width: 600px;
-    height: 300px;
+    height: 280px;
     background-color: #fff;
     border-radius: 15px;
 }
@@ -281,7 +281,7 @@ a {
     font-size:14px;
     font-weight: 500;
     cursor: pointer;
-    /* display: none; */
+    display: none;
 }
 .line{
     border-bottom: 1px solid #eee;
