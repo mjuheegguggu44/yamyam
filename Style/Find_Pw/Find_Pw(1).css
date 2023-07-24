@@ -241,11 +241,48 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: auto;
+}
+.main-checkbox{
+    width: 420px;
+    height: 200px;
 }
 
+
 .main-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 600px;
     height: 300px;
     background-color: #fff;
     border-radius: 15px;
+}
+
+#find_emailwrap,#find_numwrap{
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.find_num{
+    padding:20px 0px;
+}
+.find_email{
+    padding-top: 20px;
+}
+.check_num{
+    width: 100%;
+    margin-bottom: 25px;
+    height: 45px;
+    border-radius: 5px;
+    border:none;
+    background-color: #9BCE26;
+    color:white;
+    font-size:14px;
+    font-weight: 500;
+    cursor: pointer;
+    /* display: none; */
+}
+.line{
+    border-bottom: 1px solid #eee;
 }
