@@ -1,3 +1,311 @@
-p {
-    color:green;
+/* 전체 부분 */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* input 텍스트 클릭 시 테두리 X */
+input:focus {
+    outline: none;
+}
+
+/* a태그 클릭시 */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 맨 위부터 로고 아랫부분까지 사이즈 조정 용 박스 */
+.header-banner {
+    position: relative;
+    max-width: 1100px;
+    min-height: 120px;
+    margin: 0 auto;
+}
+
+/* 로그인 ~ 고객센터까지 */
+.service-header {
+    display: flex;
+    position: absolute;
+    right: 1px;
+    gap: 13px;
+}
+
+/* 로그인 ~ 고객센터 텍스트 */
+.service-header>a>p {
+    font-size: 12px;
+    line-height: 25px;
+}
+
+/* 로그인 ~ 고객센터 텍스트 사이 | <  */
+.After::after {
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    vertical-align: middle;
+    background-color: gray;
+    margin: -2px 0 0 11px;
+    content: "";
+}
+
+/* 로고 이미지 */
+.logo {
+    position: absolute;
+    top: 50px;
+}
+
+/* 검색창 박스 */
+.header-search {
+    position: absolute;
+    top: 55px;
+    right: 110px;
+    width: 400px;
+}
+
+/* 검색창 ~ 검색버튼까지 박스 */
+.search-box {
+    position: relative;
+    border: 1px solid #9BCE26;
+    border-radius: 7px;
+    font-weight: 500;
+    padding: 0px 45px 0px 15px;
+    width: 330px;
+    height: 30px;
+}
+
+/* 검색창 부분 */
+#search {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+}
+
+/* 돋보기 검색하는 곳 */
+.search-bt {
+    position: absolute;
+    right: 10px;
+    border: 0;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* 돋보기 검색 이미지 */
+.search-bt:after {
+    display: inline-block;
+    content: "";
+    background: url(../../images/main/header/search.png);
+    width: 14px;
+    height: 14px;
+    background-size: 13px;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+
+/* mypage , basket 박스 */
+.page {
+    position: absolute;
+    top: 60px;
+    right: 3px;
+    display: flex;
+    width: 65px;
+    height: 30px;
+    justify-content: space-between;
+}
+
+/* 마이페이지 이미지 박스 */
+.mypage {
+    background: url(../../images/main/header/user.png);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* 장바구니 이미지 박스 */
+.mybasket {
+    background: url(../../images/main/header/basket.png);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* 장바구니 이미지에 걸쳐있는 숫자 부분 */
+.count {
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    font-style: normal;
+    background: #FF542A;
+    color: white;
+    font-size: 10px;
+    border-radius: 50%;
+    text-align: center;
+    width: 13px;
+    height: 13px;
+    line-height: 15px;
+    font-weight: bold;
+}
+
+/* 카테고리 ~ 한집배달 전체 박스 */
+.menu {
+    /* width: 100%; */
+    font-size: 18px;
+    height: 40px;
+}
+
+/* 카테고리 ~ 한집배달 중간 사이즈 조정 용 박스 */
+.menu-wrap {
+    display: flex;
+    width: 1100px;
+    max-width: 1100px;
+    min-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#oneH {
+    display: flex;
+    color: red;
+    gap: 5px;
+}
+
+#oneH>img {
+    width: 11px;
+    height: 19px;
+    padding-top: 2px;
+
+}
+
+.menu-wrap a {
+    font-weight: 600;
+    color: #777;
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+
+/* 맛집랭킹 ~ 한집배달 부분 박스 */
+.liner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 90px;
+}
+
+/* 카테고리 부분 전체박스 */
+.category {
+    position: relative;
+    height: 100%;
+    display: block;
+    width: 190px;
+    /* color: #333;
+    font-size: 18px;
+    font-weight: 500; */
+    line-height: 1.5;
+}
+
+
+/* 카테고리 오른쪽 부분 | */
+.category::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: 0;
+    width: 1px;
+    height: 16px;
+    background: #ccc;
+}
+
+/* 카테고리 왼쪽 부분 작대기 3개 */
+.category::before {
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    content: "";
+    vertical-align: middle;
+    background: url(https://www.rankingdak.com/resources/pc/images/icon/ico_gnb_all.png)0 0;
+    margin: -3px 10px 2px 5px;
+
+}
+.main{
+    width: 100%;
+    height: 600px;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-box{
+    display: flex;
+    justify-content: center;
+    width: 610px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.main-checkbox{
+    padding-top:55px;
+    width: 450px;
+    height: 360px;
+}
+h1{
+    font-weight: 600;
+}
+
+.textwrap{
+    margin-top:25px;
+    width: 100%;
+    height: 175px;
+}
+
+#set_id{
+    padding-left:10px;
+    height: 38px;
+    width: 440px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+#set_pw{
+    padding-left:10px;
+    margin:5px 0px 7px;
+    height: 38px;
+    width: 440px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+
+#tip_pw{
+    font-size:10px;
+    color:red;
+    margin-bottom: 7px;
+    font-weight: 500;
+    letter-spacing:0.7px;
+    /* display: none; */
+}
+
+#check_pw{
+    padding-left:10px;
+    height: 38px;
+    width: 440px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+.change{
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    border:none;
+    background-color: #9BCE26;
+    color:white;
+    font-size:14px;
+    font-weight: 500;
+    cursor: pointer;
 }

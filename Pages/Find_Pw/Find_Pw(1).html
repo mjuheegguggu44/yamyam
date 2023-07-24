@@ -88,7 +88,7 @@
                 <h1>비밀번호 찾기</h1>
                     <div class="find_num">
                         <input name="find" id="find_num" value="find_num" type="radio" >
-                        <label for="find_num" id="find_numwrap">
+                        <label for="find_num" id="find_numwrap" onclick="Num()">
                             휴대폰번호로 찾기
                         </label>
                     </div>
@@ -99,16 +99,26 @@
 
                     <div class="find_email">
                         <input name="find" id="find_email" value="find_email" type="radio">
-                        <label for="find_email" id="find_emailwrap">
+                        <label for="find_email" id="find_emailwrap" onclick="Email()">
                         이메일로 찾기
                     </label>
+                    </div>
+                    <div class="c_number">
+                            <input id="id" type="text" placeholder="아이디">
+                            <input id="name" type="text" placeholder="아이디">
+                            <input id="email" type="text" placeholder="아이디">
+                            <input id="number" type="text" placeholder="아이디">
+
+                            <button class="get_num">인증번호 받기</button>
+                            <button class="re_pw">비밀번호 재설정</button>
+
                     </div>
             </div>
         </div>
     </div>
 
 
-    <script src="../JavaScript/Index.js"></script>
+    <script src="../../JavaScript/Find_Pw/Find_Pw(1).js"></script>
 </body>
 
 </html>
