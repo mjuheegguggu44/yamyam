@@ -246,25 +246,33 @@ a {
 
 /* 메인비쥬얼 이미지  */
 .main-img img {
-    max-width: 100%;
-    min-width: 1300px;
-    position: relative;
+    /* max-width: 100%;
+    min-width: 1300px; */
+    /* position: relative; */
 }
 
-.main-img>div{
-    width:1300px;
-    margin:0 auto;
-    position: relative;
+.main-img{
+    background-image: url('../images/main/main_visual01.jpg');
+    /* height:100vh; */
+    height:750px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-img>.inner{
+    /* width:100%;  */
+    height:100%;
+    padding: 0 15vw;
+    display: flex;
+    align-items: center;
+    
 }
 
 .main-img .v-text {
-    position: absolute;
-    /* top:433px;  */
-    top: 45%;
-    left: 12%;
-    /* top: 410px;
-    left: 340px; */
-    z-index: 1;
+    /* position: absolute; */
+    /* top:250px;  */
+    /* left: 0%; */
+    /* z-index: 1; */
     display: flex;
     flex-direction: column;
 
