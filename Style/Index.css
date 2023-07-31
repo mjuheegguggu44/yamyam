@@ -543,6 +543,7 @@ a {
 .tab2>li {
     padding-bottom: 8px;
     letter-spacing: -2px;
+    cursor: pointer;
     /* box-sizing: border-box; */
 }
 
