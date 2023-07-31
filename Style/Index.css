@@ -15,14 +15,8 @@ a {
     color: black;
 }
 
-/* 맨 위부터 로고 아랫부분까지 사이즈 조정 용 박스 */
-.header{
-    
-}
-
 .header-banner {
     position: relative;
-    /* max-width: 1100px; */
     max-width: 1300px;
     min-height: 120px;
     margin: 0 auto;
@@ -168,9 +162,6 @@ a {
 /* 카테고리 ~ 한집배달 중간 사이즈 조정 용 박스 */
 .menu-wrap {
     display: flex;
-    /* width: 1100px;
-    max-width: 1100px;
-    min-width: 1100px; */
     width: 1300px;
     max-width: 1300px;
     min-width: 1300px;
@@ -234,7 +225,6 @@ a {
 /* 카테고리 왼쪽 부분 작대기 3개 */
 .category::before {
     display: inline-block;
-    /* width: 14px; */
     width: 40px;
     height: 12px;
     content: "";
@@ -244,24 +234,15 @@ a {
 
 }
 
-/* 메인비쥬얼 이미지  */
-.main-img img {
-    /* max-width: 100%;
-    min-width: 1300px; */
-    /* position: relative; */
-}
 
 .main-img{
     background-image: url('../images/main/main_visual01.jpg');
-    /* height:100vh; */
-    /*  */
     height:750px;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .main-img>.inner{
-    /* width:100%;  */
     height:100%;
     padding: 0 15vw;
     display: flex;
