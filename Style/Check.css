@@ -304,3 +304,85 @@ h2{
     font-weight: 500;
     cursor: pointer;
 }
+footer{
+    background-color: #222;
+    height: 470px;
+    display: flex;
+    align-items: center;
+}
+
+footer>div{
+    width: 1300px; height: 248px;
+    margin:auto;
+
+}
+
+footer .contents-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:90px;
+    margin-top:40px;
+}
+
+/* 업체정보 */
+footer .f_num1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.f_nav{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.f_nav>li::after{
+    content: "ㅣ";
+    margin: 0 15px 0 15px;
+    color: #fff;
+}
+
+.f_nav>li:last-child::after{
+    content: "";
+}
+
+.f_nav a{
+    color: #fff;
+}
+
+.f_contents{
+    /* width:455px; */
+    font-size:14px;
+    color:#B2B2B2;
+    line-height: 25px;
+    list-style-type: none;
+}
+.f_contents>li{
+    display: inline;
+}
+
+/* 상담문의 */
+.f_num2>h3{
+    font-size: 45px;
+    color:#9BCE26;
+    line-height: 35px;
+}
+
+.f_num2 ul{
+    color: #fff;
+    list-style-type: none;
+    /* display: flex;
+    flex-direction: row; */
+    font-size: 16px;
+    margin-top:20px;
+    line-height: 28px;
+}
+
+/* sns */
+.f_num3{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
