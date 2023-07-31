@@ -439,13 +439,13 @@ a {
     width: 76px;
     height: 20px;
     border-radius: 20px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .num3>p>span {
     color: #fff;
     font-size: 12px;
-    margin: auto 0;
+    margin-left:13px;
 }
 
 .num3>p.new_blue {
@@ -454,6 +454,12 @@ a {
 
 .num3>p.quick_red {
     background-color: #FF4E42;
+    position: relative;
+}
+#q_red{
+    position: absolute;
+    top:3px;
+    right:6px;
 }
 
 /* 백그라운드 이미지_고정 */
