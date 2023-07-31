@@ -16,9 +16,14 @@ a {
 }
 
 /* 맨 위부터 로고 아랫부분까지 사이즈 조정 용 박스 */
+.header{
+    
+}
+
 .header-banner {
     position: relative;
-    max-width: 1100px;
+    /* max-width: 1100px; */
+    max-width: 1300px;
     min-height: 120px;
     margin: 0 auto;
 }
@@ -163,9 +168,12 @@ a {
 /* 카테고리 ~ 한집배달 중간 사이즈 조정 용 박스 */
 .menu-wrap {
     display: flex;
-    width: 1100px;
+    /* width: 1100px;
     max-width: 1100px;
-    min-width: 1100px;
+    min-width: 1100px; */
+    width: 1300px;
+    max-width: 1300px;
+    min-width: 1300px;
     height: 100%;
     margin: 0 auto;
 }
@@ -226,7 +234,8 @@ a {
 /* 카테고리 왼쪽 부분 작대기 3개 */
 .category::before {
     display: inline-block;
-    width: 14px;
+    /* width: 14px; */
+    width: 40px;
     height: 12px;
     content: "";
     vertical-align: middle;
@@ -237,16 +246,34 @@ a {
 
 /* 메인비쥬얼 이미지  */
 .main-img img {
-    max-width: 100%;
-    position: relative;
+    /* max-width: 100%;
+    min-width: 1300px; */
+    /* position: relative; */
 }
 
-.main-img>.v-text {
-    position: absolute;
-    /* top:433px;  */
-    top: 410px;
-    left: 340px;
-    z-index: 1;
+.main-img{
+    background-image: url('../images/main/main_visual01.jpg');
+    /* height:100vh; */
+    /*  */
+    height:750px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-img>.inner{
+    /* width:100%;  */
+    height:100%;
+    padding: 0 15vw;
+    display: flex;
+    align-items: center;
+    
+}
+
+.main-img .v-text {
+    /* position: absolute; */
+    /* top:250px;  */
+    /* left: 0%; */
+    /* z-index: 1; */
     display: flex;
     flex-direction: column;
 
@@ -561,6 +588,13 @@ a {
 
 .food-p>ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+.food-p>ul:nth-child(2) {
+    margin-top: 36px;
 }
 
 .food-p>ul>li>p>a>img {
@@ -574,14 +608,34 @@ a {
 }
 
 .food-p .text-box {
-    width: 398px;
+    width: 298px;
+    /* height: 86px; */
     list-style-type: none;
-    display: flex;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 .food-p .text-box li {
-    width: 240px;
+    width: 298px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    margin-top: 10px;
+}
+
+.food-p .text-box li:nth-child(2){
+    margin-top: 10px;
+}
+
+.food-p .num1 p {
+    font-size: 20px;
+    color: #444;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.food-p .num1 p:nth-child(1){
+    margin-right: 12px;
 }
 
 .food-p .text-box a {
@@ -589,11 +643,94 @@ a {
     letter-spacing: -1px;
     color: #444;
     font-weight: bold;
-    line-height: 20px;
 }
 
-.food-p .num1 p {
-    font-size: 20px;
-    color: #444;
-    font-weight: bold;
+.food-p .text-box li>div>p span {
+    background-color: #8B44C8;
+    color: #fff;
+    font-size: 9px;
+}
+
+/* 푸터 */
+footer{
+    background-color: #222;
+    height: 470px;
+    display: flex;
+    align-items: center;
+}
+
+footer>div{
+    width: 1300px; height: 248px;
+    margin:auto;
+
+}
+
+footer .contents-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:90px;
+    margin-top:40px;
+}
+
+/* 업체정보 */
+footer .f_num1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.f_nav{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.f_nav>li::after{
+    content: "ㅣ";
+    margin: 0 15px 0 15px;
+    color: #fff;
+}
+
+.f_nav>li:last-child::after{
+    content: "";
+}
+
+.f_nav a{
+    color: #fff;
+}
+
+.f_contents{
+    /* width:455px; */
+    font-size:14px;
+    color:#B2B2B2;
+    line-height: 25px;
+    list-style-type: none;
+}
+.f_contents>li{
+    display: inline;
+}
+
+/* 상담문의 */
+.f_num2>h3{
+    font-size: 45px;
+    color:#9BCE26;
+    line-height: 35px;
+}
+
+.f_num2 ul{
+    color: #fff;
+    list-style-type: none;
+    /* display: flex;
+    flex-direction: row; */
+    font-size: 16px;
+    margin-top:20px;
+    line-height: 28px;
+}
+
+/* sns */
+.f_num3{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
 }
