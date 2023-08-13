@@ -450,6 +450,7 @@ a {
     color: #fff;
     font-size: 12px;
     /* margin-left:13px; */
+    /* margin auto로 해도 괜찮나요? */
     margin: auto;    
 }
 
