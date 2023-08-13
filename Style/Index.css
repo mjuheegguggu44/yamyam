@@ -449,7 +449,8 @@ a {
 .num3>p>span {
     color: #fff;
     font-size: 12px;
-    margin-left:13px;
+    /* margin-left:13px; */
+    margin: auto;    
 }
 
 .num3>p.new_blue {
