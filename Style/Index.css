@@ -440,6 +440,10 @@ a {
     height: 20px;
     border-radius: 20px;
     /* text-align: center; */
+    /* 아래 이렇게 해도 되나요? */
+    align-items: center;
+    justify-self: center;
+    display: flex;
 }
 
 .num3>p>span {
@@ -620,6 +624,10 @@ a {
     color: #444;
     font-weight: bold;
     line-height: 22px;
+}
+
+.food-p .num1 img {
+    cursor: pointer;
 }
 
 .food-p .num1 p:nth-child(1){

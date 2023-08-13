@@ -12,10 +12,10 @@
     <div class="header">
         <div class="header-banner">
             <div class="service-header">
-                <a href="" alt="로그인">
+                <a href="./../Login.html" alt="로그인">
                     <p class="After">로그인</p>
                 </a>
-                <a href="" alt="회원가입">
+                <a href="./../Register/Register(1).html" alt="회원가입">
                     <p class="After">회원가입</p>
                 </a>
                 <a href="" alt="주문조회">
@@ -26,7 +26,7 @@
                 </a>
             </div>
             <div class="logo">
-                <a href="#" alt="logo">
+                <a href="./../Index.html" alt="logo">
                     <img src="../../images/main/header/logo.png" alt="logo" width="160px">
                 </a>
             </div>
@@ -108,7 +108,18 @@
                     <div class="c_number">
                             <input id="id" type="text" placeholder="아이디">
                             <input id="name" type="text" placeholder="이름 2글자 이상 입력">
-                            <input id="email" type="text" placeholder="이메일 주소">
+                            <div class="e-mail">
+                                <input id="email" type="text" placeholder="이메일 주소">
+                                <select id="mailAddress">
+                                    <option selected>직접입력</option>
+                                    <option>naver.com</option>
+                                    <option>gmail.com</option>
+                                    <option>daum.net</option>
+                                    <option>nate.com</option>
+                                    <option>outlook.com</option>
+                                    <option>yahoo.com</option>
+                                </select>
+                            </div>
                             <input id="number" type="text" placeholder="인증번호 입력">
 
                             <button class="get_num">인증번호 받기</button>

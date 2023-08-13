@@ -333,13 +333,36 @@ a {
     display: none;
 }
 
-#id,#email,#number,#name{
+#id,#number,#name{
     width: 435px;
     height: 45px;
     border-radius: 5px;
     border:1px solid #eee;
     padding-left:13px;
     margin-top:6px;
+}
+
+#email {
+    width: 320px;
+    height: 45px;
+    border-radius: 5px;
+    border:1px solid #eee;
+    padding-left:13px;
+    margin-top:6px;
+}
+
+#mailAddress {
+    width: 115px;
+    height: 45px;
+    border-radius: 5px;
+    border:1px solid #eee;
+    padding-left:13px;
+    margin-top:6px;
+    color: #777;
+}
+
+.e-mail {
+    display: flex;
 }
 
 .get_num{
