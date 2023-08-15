@@ -148,8 +148,14 @@ a {
     text-align: center;
     width: 13px;
     height: 13px;
-    line-height: 15px;
+    /* line-height: 15px; */
     font-weight: bold;
+}
+
+.count span{
+    position: absolute;
+    bottom: 1px;
+    left:4px;
 }
 
 /* 카테고리 ~ 한집배달 전체 박스 */
@@ -238,8 +244,10 @@ a {
 .main-img{
     background-image: url('../images/main/main_visual01.jpg');
     height:750px;
+    /* width:100%; */
     background-position: center;
     background-repeat: no-repeat;
+    transition: all 0.8s;
 }
 
 .main-img>.inner{
@@ -267,6 +275,10 @@ a {
     margin-bottom: 5px;
 }
 
+.text-wrap{
+    display: inline;
+}
+
 .main-img .text1>span {
     font-weight: bold;
 }
@@ -292,6 +304,7 @@ a {
     flex-direction: row;
     gap: 12px;
     padding-top: 64px;
+    
 }
 
 .main-img p {
@@ -299,11 +312,24 @@ a {
     height: 15px;
     border: 2px solid #fff;
     border-radius: 50px;
+    cursor: pointer;
 }
 
-.main-img p:nth-child(1) {
+/* js로 스타일 변경 적용 */
+/* .main-img p:nth-child(1) {
     background-color: #fff;
-}
+} */
+
+/* 메인비쥬얼 mobile - 680px*/
+@media screen and (max-width:680px) {
+            .text-wrap {
+                display: block;
+            }
+            .main-img .text2 {
+                font-size: 45px;
+            }
+        }
+        
 
 /* 메인컨텐츠_베스트메뉴 */
 #main-wrap {
@@ -324,13 +350,14 @@ a {
 
 /* 베스트메뉴 탭 */
 .tab1 {
-    padding: 42px 0 90px;
+    padding: 35px 0 70px;
+    /* padding: 42px 0 90px; */
 }
 
 .tab1>ul {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 15px;
 }
 
 .tab1 li {
@@ -340,7 +367,13 @@ a {
     padding: 20px 10px 22px;
     box-sizing: border-box;
     display: block;
+    /* transition: all 0.1s; */
 }
+
+
+ /* .tab1 li:hover{ 
+    border:4px solid #83B01B;
+} */
 
 .tab1 li img {
     margin-bottom: 5px;
@@ -381,14 +414,40 @@ a {
 /* 상품사진 */
 .food-h {
     margin-bottom: 25px;
+    transition: all 0.5s;
+    overflow: hidden;
+    border-radius: 20px;
+    width:294px; height:290px;
 }
+
+.food-h img{
+    transition: all 0.2s linear;
+    /* image-rendering: auto; */
+   
+}
+
+/* 상품 이미지 확대 */
+.food-h:hover img{
+    transform : scale(1.03);
+    image-rendering: auto;
+}
+
 
 /* 상품정보 */
 .contents .num1 {
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
+
+    font-size: 20px;
+    color: #444;
+    font-weight: bold;
+    line-height: 20px;
 }
+
+/* .num1 img{
+    margin-top:5px;
+} */
 
 .contents .text-box {
     width: 226px;
@@ -399,12 +458,6 @@ a {
     letter-spacing: -1px;
 }
 
-.contents .num1 {
-    font-size: 20px;
-    color: #444;
-    font-weight: bold;
-    line-height: 20px;
-}
 
 .contents .num2 {
     margin-bottom: 20px;
@@ -437,21 +490,22 @@ a {
 
 .num3>p {
     width: 76px;
-    height: 20px;
+    /* height: 20px; */ line-height: 20px;
     border-radius: 20px;
     /* text-align: center; */
     /* 아래 이렇게 해도 되나요? */
     align-items: center;
-    justify-self: center;
+    justify-content: center;
     display: flex;
+    padding-left:4px;
+    box-sizing: border-box;
 }
 
 .num3>p>span {
     color: #fff;
     font-size: 12px;
     /* margin-left:13px; */
-    /* margin auto로 해도 괜찮나요? */
-    margin: auto;    
+    /* margin: auto;     */
 }
 
 .num3>p.new_blue {
@@ -460,13 +514,13 @@ a {
 
 .num3>p.quick_red {
     background-color: #FF4E42;
-    position: relative;
+    /* position: relative; */
 }
-#q_red{
+/* #q_red{
     position: absolute;
     top:3px;
     right:6px;
-}
+} */
 
 /* 백그라운드 이미지_고정 */
 #background {
@@ -541,7 +595,8 @@ a {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    gap: 80px;
+    /* gap: 80px; */
+    gap: 60px;
     margin-top: 40px;
     margin-bottom: 70px;
 }
@@ -550,13 +605,13 @@ a {
     padding-bottom: 8px;
     letter-spacing: -2px;
     cursor: pointer;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
+    transition: all 0.1s;
 }
 
 .tab2>li:hover {
-    border-bottom: 3px solid #9BCE26;
-    padding-bottom: 3px;
-    box-sizing: border-box;
+    border-bottom: 4px solid #9BCE26;
+    padding-bottom: 4px;
 }
 
 .tab2 a {
@@ -591,9 +646,33 @@ a {
     margin-top: 36px;
 }
 
-.food-p>ul>li>p>a>img {
-    border-radius: 20px;
+.food-p>ul>li>p{
+    width:298px; height: 210px;
 }
+
+.p-active{
+    transition: all 0.5s;
+    overflow: hidden;
+    border-radius: 20px;
+    /* width:298px; height: 210px; */
+}
+
+.p-active img{
+    transition: all 0.2s linear;
+    /* image-rendering: auto; */
+   
+}
+
+/* 상품 이미지 확대 */
+.p-active:hover img{
+    transform : scale(1.03);
+    image-rendering: auto;
+}
+
+
+/* .food-p>ul>li>p>a>img {
+    border-radius: 20px;
+} */
 
 .food-p .num1 {
     display: flex;
@@ -614,7 +693,7 @@ a {
     display: flex;
     flex-direction: row;
     /* align-items: center; */
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .food-p .text-box li:nth-child(2){
