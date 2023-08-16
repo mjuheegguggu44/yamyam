@@ -310,7 +310,7 @@ a {
     padding:20px 0 5px;
     position: relative;
 }
-.c_num1{
+.check_num{
     width: 100%;
     margin-bottom: 25px;
     height: 45px;
@@ -327,13 +327,13 @@ a {
     border-bottom:2px solid #eee;
 }
 
-.c_num2{
+.c_number{
     width: 450px;
     height: 200px;
     display: none;
 }
 
-#name{
+#id,#number,#name{
     width: 435px;
     height: 45px;
     border-radius: 5px;
@@ -343,7 +343,7 @@ a {
 }
 
 #email {
-    width: 320px;
+    width: 300px;
     height: 45px;
     border-radius: 5px;
     border:1px solid #eee;
@@ -351,13 +351,14 @@ a {
     margin-top:6px;
 }
 
-#emailAddress {
-    width: 115px;
-    height: 45px;
+#mailAddress {
+    width: 130px;
+    height: 47px;
     border-radius: 5px;
-    border:1px solid #eee;
+    border:1px solid black;
     padding-left:13px;
     margin-top:6px;
+    margin-left:3px;
     color: #777;
 }
 
@@ -380,7 +381,7 @@ a {
 
 .check{
     width: 100%;
-    margin-bottom: 25px;
+    margin:25px 0px;
     height: 53px;
     border-radius: 10px;
     border:none;
